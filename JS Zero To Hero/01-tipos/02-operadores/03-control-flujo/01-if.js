@@ -1,5 +1,5 @@
 let edad = 25;
 
-if (edad >= 18) {
-  console.log("puede entrar");
+if (edad >= 17) {
+  console.log("usuario mayor de edad");
 }
