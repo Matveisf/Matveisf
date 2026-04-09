@@ -24,5 +24,6 @@ function toCollection(arr) {
     }
     return collection;
 }
+
 let resultado = toCollection(pairs);
 console.log(resultado);
