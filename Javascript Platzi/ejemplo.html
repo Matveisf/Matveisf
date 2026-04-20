@@ -4,9 +4,26 @@
     <meta charset="utf-8">
     <title>Mi primer proyecto serio</title>
     <script type="text/javascript">
+
+async function traer pais()
+{
+    const respuesta = fetch("https://api.nationalize.io/?name=diana");
+
+    if(!respuesta.OK)
+    {
+        let oops = "404 no encontre nada";
+        alert(oops)
+        throw new Error(oops);
+    }
+
+    const nombre = respuesta.json();
+
+    return nombre;
+}
+
 function mostrarnombre(n)
 {
-    
+    document.getElementById("mensaje").innerHTML = n.country[0].country_id;
 }    
     </script>
 </head>
